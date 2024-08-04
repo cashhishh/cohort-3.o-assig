@@ -38,3 +38,28 @@ function findSum(a) {
   return total;
 }
 console.log(findSum(5));
+
+//Assignment 5
+function greet() {
+  console.log(
+    "Hey " + user.gender + " " + user.firstName + ". Your age is " + user.age
+  );
+}
+let user = {
+  firstName: "Kashish",
+  age: 19,
+  gender: "mr/mrs",
+};
+greet();
+canVote(user.age);
+//Assignment 6
+function filterAdultMales(users) {
+  return users.filter((user) => user.age >= 18 && user.gender == "male");
+}
+const users = [
+  { FirstName: "Kashish", age: 18, gender: "female" },
+  { FirstName: "Dhruv", age: 19, gender: "male" },
+  { FirstName: "Jatin", age: 17, gender: "male" },
+];
+const result = filterAdultMales(users);
+console.log(result);
