@@ -8,9 +8,13 @@ console.log(sum(1, 3));
 //Assignment 2
 
 function canVote(age) {
-  return age > 18;
+  if (age >= 18) {
+    console.log("You can vote");
+  } else {
+    console.log("You are a minor");
+  }
 }
-console.log(canVote(12));
+canVote(12);
 
 //Assignment 3
 function OddorEven(num) {
