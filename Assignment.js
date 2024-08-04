@@ -8,7 +8,7 @@ console.log(sum(1, 3));
 //Assignment 2
 
 function canVote(age) {
-  if (age >= 18) {
+  if (age > 18) {
     console.log("You can vote");
   } else {
     console.log("You are a minor");
