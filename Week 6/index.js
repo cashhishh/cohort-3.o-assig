@@ -73,9 +73,7 @@ const TokenGenerator = () => {
   }
   return token;
 };
-app.get("/", (req, res) => {
-  res.send("hey");
-});
+
 app.post("/signup", (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
