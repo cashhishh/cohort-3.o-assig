@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="box">
+      <div id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" />
+        <input type="password" id="signup-password" placeholder="Password" />
+        <button id="signup-button">Sign Up</button>
+        <div id="signup-message"></div>
+      </div>
+      <div id="signin-form">
+        <h2>Sign In</h2>
+        <input type="text" id="signin-username" placeholder="Username" />
+        <input type="password" id="signin-password" placeholder="Password" />
+        <button id="signin-button">Sign In</button>
+        <div id="signin-message"></div>
+      </div>
+
+      <div id="userinfo" class="hidden">
+        <button id="getuserinfo-button">Get User Info</button>
+        <button id="signout-button">Sign Out</button>
+        <div id="user-info-message"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
